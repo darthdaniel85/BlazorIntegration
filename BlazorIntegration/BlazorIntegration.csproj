@@ -6,6 +6,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.SignalR" Version="1.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorIntegration.Data\BlazorIntegration.Data.csproj" />
+    <ProjectReference Include="..\BlazorIntegration.Domain\BlazorIntegration.Domain.csproj" />
   </ItemGroup>
 
 </Project>

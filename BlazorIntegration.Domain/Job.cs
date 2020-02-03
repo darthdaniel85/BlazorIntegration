@@ -6,27 +6,15 @@ namespace BlazorIntegration.Domain
 {
     public class Job
     {
-        /*
-         *   ,[Number]
-      ,[Lead.Id]
-      ,[Campaign.Id]
-      ,[BusinessUnit.Id]
-      ,[Customer.Id]
-      ,[CallScriptAnswerRecord.Id]
-      ,[Location.Id]
-      ,[Type.Id]
-      ,[RecallFor.Id]
-      ,[WarrantyFor.Id]
-      ,[Priority]
-      ,[Start]
-      ,[End]
-      ,[Duration]
-      ,[Status]
-      ,[Summary]
-      ,[Total]
-         */
-         
         public int Id { get; set; }
+        public int Number { get; set; }
+        public int Priority { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
+        public string Status { get; set; }
+        public string Summary { get; set; }
+        public decimal Total { get; set; }
+
         public Customer Customer { get; set; }
     }
 }
